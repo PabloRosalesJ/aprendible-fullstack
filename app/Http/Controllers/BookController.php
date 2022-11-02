@@ -82,7 +82,8 @@ class BookController extends Controller
         return Response::ok(
             $book,
             'Libro eliminado exitosamente.',
-            HttpFoundationResponse::HTTP_CREATED
+            HttpFoundationResponse::HTTP_NO_CONTENT
         );
+
     }
 }
