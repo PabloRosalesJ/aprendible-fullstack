@@ -9,7 +9,7 @@ class Response
         return (string) Str::uuid();
     }
 
-    public static function ok(string $message, $data = null, int $httpStatusCode = 200)
+    public static function ok($data, string $message = null, int $httpStatusCode = 200)
     {
         $uuid = self::getUid();
         $reasonPhrase = self::getSatusText($httpStatusCode);
